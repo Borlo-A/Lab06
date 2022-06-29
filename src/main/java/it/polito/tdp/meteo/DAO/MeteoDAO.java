@@ -50,7 +50,7 @@ public class MeteoDAO {
 			Connection conn = ConnectDB.getConnection();
 			PreparedStatement st = conn.prepareStatement(sql);
 
-			st.setInt(mese, mese);
+			st.setInt(1, mese);
 			ResultSet rs = st.executeQuery();
 
 			while (rs.next()) {
